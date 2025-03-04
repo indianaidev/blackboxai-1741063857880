@@ -2,17 +2,28 @@
 
 A modern blog platform built with React, Clerk Authentication, Neon Database, and Drizzle ORM.
 
+## Prerequisites
+
+1. Create a [Clerk](https://dashboard.clerk.dev/) account
+   - Get your publishable key from the Clerk Dashboard
+   - Add it to `.env` as `VITE_CLERK_PUBLISHABLE_KEY`
+
+2. Create a [Neon](https://console.neon.tech/) database
+   - Create a new project and get the connection string
+   - Add it to `.env` as `VITE_NEON_DATABASE_URL`
+   - Format: `postgres://user:password@host/database`
+
 ## Quick Start
 
-1. Set up environment variables:
-```env
-VITE_CLERK_PUBLISHABLE_KEY=your_clerk_publishable_key
-VITE_NEON_DATABASE_URL=your_neon_database_url
-```
-
-2. Install dependencies:
+1. Install dependencies:
 ```bash
 npm install
+```
+
+2. Set up environment variables in `.env`:
+```env
+VITE_CLERK_PUBLISHABLE_KEY=pk_test_your-clerk-publishable-key
+VITE_NEON_DATABASE_URL=postgres://your-neon-connection-string
 ```
 
 3. Initialize database:
