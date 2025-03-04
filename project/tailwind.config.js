@@ -7,22 +7,22 @@ export default {
         dark: {
           100: '#1E1E2E',
           200: '#181825',
-          300: '#11111B',
+          300: '#11111B'
         },
         accent: {
           primary: '#7C3AED',
-          secondary: '#3B82F6',
-          success: '#10B981',
-          warning: '#F59E0B',
-          danger: '#EF4444',
-        },
+          secondary: '#6D28D9'
+        }
       },
-      fontFamily: {
-        sans: ['Inter', 'sans-serif'],
+      keyframes: {
+        fadeIn: {
+          '0%': { opacity: '0', transform: 'scale(0.95)' },
+          '100%': { opacity: '1', transform: 'scale(1)' }
+        }
       },
-      boxShadow: {
-        'glow': '0 0 15px rgba(124, 58, 237, 0.5)',
-      },
+      animation: {
+        fadeIn: 'fadeIn 0.3s ease-out'
+      }
     },
   },
   plugins: [],
